@@ -1,0 +1,18 @@
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  text-align: center;
+}
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  text-align: center;
+}
+.fas.fa-barcode {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 500px;
+}
