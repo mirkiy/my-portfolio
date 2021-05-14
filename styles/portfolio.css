@@ -1,18 +1,130 @@
-h1 {
-  font-family: "Raleway", sans-serif;
-  font-size: 60px;
+:root {
+  --primary-color: #fff0db;
+  --heading-color: #405260;
+  --anchor-color: #969490;
+  --hover-color: #e57a7a;
+}
+body {
+  background-color: var(--primary-color);
+}
+h1,
+h2 {
+  color: var(--heading-color);
   font-weight: 400;
   text-align: center;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.5;
+}
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
 }
 h2 {
   font-family: "Raleway", sans-serif;
   font-size: 34px;
-  font-weight: 400;
-  text-align: center;
 }
-.fas.fa-barcode {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 500px;
+.main-body {
+  padding: 200px 40px;
+}
+.footer,
+.header {
+  transition: all 1s ease-in-out;
+}
+
+.header a {
+  text-decoration: none;
+  color: var(--anchor-color);
+}
+.header a:hover {
+  color: var(--hover-color);
+}
+.footer a {
+  text-decoration: none;
+  color: var(--anchor-color);
+}
+.footer a:hover {
+  color: var(--hover-color);
+}
+.header-menu-left {
+  position: fixed;
+  top: 60px;
+  left: 45px;
+}
+.header-menu-right {
+  position: fixed;
+  top: 80px;
+  right: 45px;
+  transform: rotate(90deg);
+}
+.footer-menu-right {
+  position: fixed;
+  bottom: 60px;
+  right: 45px;
+}
+.footer-menu-left {
+  position: fixed;
+  bottom: 80px;
+  left: 45px;
+  transform: rotate(-90deg);
+}
+@media (max-width: 992px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .header-menu-left {
+    top: 50px;
+    left: 25px;
+    transition: all 1s ease-in-out;
+  }
+  .header-menu-right {
+    top: 50px;
+    right: 25px;
+    transition: all 1s ease-in-out;
+  }
+  .footer-menu-left {
+    bottom: 50px;
+    left: 25px;
+    transition: all 1s ease-in-out;
+  }
+  .footer-menu-right {
+    bottom: 50px;
+    right: 25px;
+    transition: all 1s ease-in-out;
+  }
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .header-menu-left {
+    top: 25px;
+    left: 8px;
+    font-size: 10px;
+    transition: all 1s ease-in-out;
+  }
+  .header-menu-right {
+    top: 30px;
+    right: 8px;
+    font-size: 10px;
+    transition: all 1s ease-in-out;
+  }
+  .footer-menu-left {
+    bottom: 30px;
+    left: 8px;
+    font-size: 10px;
+    transition: all 1s ease-in-out;
+  }
+  .footer-menu-right {
+    bottom: 25px;
+    right: 8px;
+    font-size: 10px;
+    transition: all 1s ease-in-out;
+  }
 }
