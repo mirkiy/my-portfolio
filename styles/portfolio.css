@@ -9,23 +9,65 @@ body {
 }
 h1,
 h2 {
+  font-family: "Raleway", sans-serif;
   color: var(--heading-color);
   font-weight: 400;
   text-align: center;
   font-weight: 400;
   text-align: center;
   line-height: 1.5;
+  transition: all 1s ease-in-out;
 }
 h1 {
-  font-family: "Raleway", sans-serif;
-  font-size: 50px;
+  font-size: 85px;
 }
 h2 {
-  font-family: "Raleway", sans-serif;
-  font-size: 34px;
+  font-size: 65px;
 }
-.main-body {
-  padding: 200px 40px;
+a {
+  text-decoration: none;
+}
+.item-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40vh;
+  margin-bottom: 40vh;
+  position: relative;
+}
+#profile-image,
+#works-image,
+#contact-image {
+  display: none;
+  width: 370px;
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+#profile-image {
+  margin-top: -100px;
+}
+h1:hover #profile-image {
+  display: block;
+  opacity: 0.4;
+}
+#works-image {
+  margin-top: 76px;
+}
+h2:hover #works-image {
+  display: block;
+  opacity: 0.4;
+}
+#contact-image {
+  margin-top: 210px;
+}
+h2:hover #contact-image {
+  display: block;
+  opacity: 0.4;
 }
 .footer,
 .header {
@@ -33,14 +75,12 @@ h2 {
 }
 
 .header a {
-  text-decoration: none;
   color: var(--anchor-color);
 }
 .header a:hover {
   color: var(--hover-color);
 }
 .footer a {
-  text-decoration: none;
   color: var(--anchor-color);
 }
 .footer a:hover {
@@ -70,30 +110,38 @@ h2 {
 }
 @media (max-width: 992px) {
   h1 {
-    font-size: 30px;
+    font-size: 60px;
   }
   h2 {
-    font-size: 24px;
+    font-size: 40px;
+  }
+  #profile-image {
+    width: 200px;
+    margin-top: -45px;
+  }
+  #works-image {
+    width: 250px;
+    margin-top: 53px;
+  }
+  #contact-image {
+    width: 200px;
+    margin-top: 150px;
   }
   .header-menu-left {
     top: 50px;
     left: 25px;
-    transition: all 1s ease-in-out;
   }
   .header-menu-right {
     top: 50px;
     right: 25px;
-    transition: all 1s ease-in-out;
   }
   .footer-menu-left {
     bottom: 50px;
     left: 25px;
-    transition: all 1s ease-in-out;
   }
   .footer-menu-right {
     bottom: 50px;
     right: 25px;
-    transition: all 1s ease-in-out;
   }
 }
 @media (max-width: 576px) {
@@ -103,28 +151,44 @@ h2 {
   h2 {
     font-size: 24px;
   }
+  h1,
+  h2 {
+    line-height: 5;
+  }
+  .item-container {
+    margin-top: 20vh;
+    margin-bottom: 30vh;
+  }
+  #profile-image {
+    width: 180px;
+    margin-top: 12px;
+  }
+  #works-image {
+    width: 180px;
+    margin-top: 170px;
+  }
+  #contact-image {
+    width: 180px;
+    margin-top: 295px;
+  }
   .header-menu-left {
     top: 25px;
     left: 8px;
     font-size: 10px;
-    transition: all 1s ease-in-out;
   }
   .header-menu-right {
     top: 30px;
     right: 8px;
     font-size: 10px;
-    transition: all 1s ease-in-out;
   }
   .footer-menu-left {
     bottom: 30px;
     left: 8px;
     font-size: 10px;
-    transition: all 1s ease-in-out;
   }
   .footer-menu-right {
     bottom: 25px;
     right: 8px;
     font-size: 10px;
-    transition: all 1s ease-in-out;
   }
 }
