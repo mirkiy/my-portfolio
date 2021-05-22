@@ -11,7 +11,8 @@ body {
 }
 h1,
 h2,
-h4 {
+h4,
+h5 {
   font-family: var(--default-font-family);
   color: var(--heading-color);
   font-weight: 400;
@@ -27,6 +28,7 @@ h2 {
 }
 a {
   text-decoration: none;
+  color: var(--anchor-color);
 }
 
 /*homepage*/
@@ -146,6 +148,22 @@ h2:hover #contact-image {
 }
 .project-anchor {
   text-align: center;
+}
+
+/*contact*/
+
+.email-link {
+  text-align: center;
+  font-size: 24px;
+}
+
+.contact-links a {
+  text-align: center;
+  margin: 20px 30px;
+  font-size: 40px;
+}
+a:hover {
+  color: var(--hover-color);
 }
 
 /*media-responsive*/
