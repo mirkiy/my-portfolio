@@ -1,7 +1,5 @@
 :root {
-  --primary-color: #fff0db;
-  --heading-color: #405260;
-  --anchor-color: #969490;
+  --navigation-color: #969490;
   --hover-color: #e57a7a;
   --default-font-family: "Raleway", sans-serif;
 }
@@ -15,7 +13,7 @@ body {
 }
 h1,
 h2,
-h4 {
+h3 {
   font-family: var(--default-font-family);
   color: white;
   font-weight: 400;
@@ -27,7 +25,7 @@ h1 {
   font-size: 85px;
 }
 h2 {
-  font-size: 55px;
+  font-size: 65px;
 }
 a {
   text-decoration: none;
@@ -80,7 +78,7 @@ h2:hover #contact-image {
   opacity: 0.4;
 }
 .portfolio-project-link {
-  color: var(--anchor-color);
+  color: var(--navigation-color);
   margin: 0 auto;
   margin-top: 100px;
 }
@@ -92,14 +90,19 @@ h2:hover #contact-image {
   transition: all 1s ease-in-out;
 }
 
+.footer .active a,
+.header .active a {
+  color: whitesmoke;
+  text-decoration: underline;
+}
 .header a {
-  color: var(--anchor-color);
+  color: var(--navigation-color);
 }
 .header a:hover {
   color: var(--hover-color);
 }
 .footer a {
-  color: var(--anchor-color);
+  color: var(--navigation-color);
 }
 .footer a:hover {
   color: var(--hover-color);
@@ -145,7 +148,7 @@ h2:hover #contact-image {
   text-align: justify;
 }
 .projects-link {
-  color: var(--anchor-color);
+  color: var(--navigation-color);
   font-weight: bolder;
 }
 .projects-link:hover {
@@ -166,11 +169,13 @@ h2:hover #contact-image {
 
 /*contact*/
 
+.contact-section h2 {
+  font-size: 55px;
+}
 .email-link {
   text-align: center;
   font-size: 24px;
 }
-
 .contact-links a {
   text-align: center;
   margin: 20px 30px;
@@ -201,9 +206,7 @@ a:hover {
     width: 200px;
     margin-top: 150px;
   }
-  .about-section img {
-    margin-top: 20px;
-  }
+
   .header-menu-left {
     top: 50px;
     left: 25px;
@@ -235,6 +238,9 @@ a:hover {
   .about-section h1 {
     font-size: 55px;
   }
+  .contact-section h2 {
+    font-size: 30px;
+  }
 
   .item-container {
     margin-top: 20vh;
@@ -246,7 +252,9 @@ a:hover {
   .portfolio-project-link {
     font-size: 12px;
   }
-
+  .about-image {
+    margin-top: 15px;
+  }
   #profile-image {
     width: 180px;
     margin-top: 12px;
@@ -259,7 +267,6 @@ a:hover {
     width: 180px;
     margin-top: 295px;
   }
-
   .header-menu-left {
     top: 25px;
     left: 8px;
