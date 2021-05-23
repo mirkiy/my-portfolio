@@ -79,6 +79,11 @@ h2:hover #contact-image {
   display: block;
   opacity: 0.4;
 }
+.portfolio-project-link {
+  color: var(--anchor-color);
+  margin: 0 auto;
+  margin-top: 100px;
+}
 
 /*headers,footers*/
 
@@ -132,7 +137,7 @@ h2:hover #contact-image {
   line-height: 80%;
 }
 .about-section h2 {
-  font-size: 18px;
+  font-size: 20px;
 }
 .about-section p {
   font-size: 14px;
@@ -148,7 +153,6 @@ h2:hover #contact-image {
 }
 .about-image {
   border-radius: 5px;
-  box-shadow: 2px 2px 4px 2px gray;
 }
 
 /*work*/
@@ -238,6 +242,9 @@ a:hover {
   }
   .projects-link {
     padding-bottom: 40px;
+  }
+  .portfolio-project-link {
+    font-size: 12px;
   }
 
   #profile-image {
