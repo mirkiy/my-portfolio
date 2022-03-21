@@ -166,6 +166,12 @@ h2:hover #contact-image {
 .project-anchor {
   text-align: center;
 }
+.img-fluid {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: bottom;
+}
 
 /*contact*/
 
