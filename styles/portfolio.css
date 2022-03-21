@@ -111,12 +111,14 @@ h2:hover #contact-image {
   position: fixed;
   top: 60px;
   left: 45px;
+  z-index: 1;
 }
 .header-menu-right {
   position: fixed;
   top: 80px;
   right: 45px;
   transform: rotate(90deg);
+  z-index: 1;
 }
 .footer-menu-right {
   position: fixed;
